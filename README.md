@@ -81,6 +81,7 @@ Steps:
 - Open bashrc file: `sudo nano ~/.bashrc`
 
 - At the end add this: `export PATH=$PATH:/usr/lib/jvm/graalvm-ce-java11-20.0.0/lib/installer/bin`
+  
   Note: You may use the suitable path as per your installation
   
 ### After that you may try running `gu` again: `gu install native-image` 
