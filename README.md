@@ -84,4 +84,27 @@ Steps:
   Note: You may use the suitable path as per your installation
   
 ### After that you may try running `gu` again: `gu install native-image` 
+
+## Still Unable to use `native-image`??
+
+Do the same for native-image:Add this to bashrc file for native-image
+
+`export PATH=$PATH:/usr/lib/jvm/graalvm-ce-java11-20.0.0/lib/svm/bin`
+
+## To use the commands as Super User:
+
+Add this to `/root/.bashrc` and `/root/.profile`: 
+
+- Open bashrc for root `sudo nano /root/.bashrc`
+- Add these at the end :
+  ```
+  export PATH=$PATH:/usr/lib/jvm/graalvm-ce-java11-20.0.0/lib/installer/bin
+  export PATH=$PATH:/usr/lib/jvm/graalvm-ce-java11-20.0.0/lib/svm/bin
+  
+  ```
+- Do the same for profile: `sudo nano /root/profile`
+  
+
+
+
   
